@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Compras Api</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header>
+        <h1>TiendaNet👾</h1>
+        <!-- Buscador -->
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Buscar productos" required>
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <main>
+        <!-- Resultados de la búsqueda -->
+        <div id="search-results" class="results-container"></div>
+    </main>
+
+    <!-- Detalles del Producto (Modal) -->
+    <div id="product-details-modal" class="modal">
+        <div id="product-details-content" class="modal-content">
+            <span id="close-modal" class="close-button">&times;</span>
+            <div id="product-details"></div>
+        </div>
+    </div>
+
+    <!-- Icono de Carrito de Compras -->
+    <div id="cart-icon" class="cart-icon">
+        🛒
+    </div>
+
+    <!-- Detalle del Carrito de Compras -->
+    <div id="cart-details-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-cart-modal" class="close-button">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="cart" class="cart-container"></div>
+            <button id="checkout-button" class="checkout-button">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
