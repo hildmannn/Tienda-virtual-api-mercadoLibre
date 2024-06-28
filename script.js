@@ -69,14 +69,14 @@ function displayProductDetails(product, description) {
         </div>
         <p>Precio: $${product.price}</p>
         <p>${description.plain_text || 'No hay descripción disponible.'}</p>
-        <button onclick="addToCart('${product.id}', '${product.title}', ${product.price})">Agregar al carrito</button>
+        <button class="add-to-cart-button" onclick="addToCart('${product.id}', '${product.title}', ${product.price})">Agregar al carrito</button>
     `;
 }
 
 // Función para inicializar el carrusel
 function initializeCarousel() {
     $('.carousel').slick({
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 300,
         slidesToShow: 1,

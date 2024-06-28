@@ -138,6 +138,26 @@ main {
     margin: 10px 0;
 }
 
+/* Botones del carrito */
+.cart-item-buttons button {
+    margin: 0 5px;
+}
+
+/* Botón "Agregar al carrito" */
+.add-to-cart-button {
+    padding: 10px 20px;
+    background-color: #00a650;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+    background-color: #008c4a;
+}
+
 .cart-icon {
     position: fixed;
     bottom: 20px;
@@ -189,8 +209,23 @@ main {
 
 .slick-prev, .slick-next {
     color: #000 !important;
-    font-size: 18px;
+    font-size: 40px !important;
+    z-index: 1;
 }
+
+.slick-prev {
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.slick-next {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 .slick-dots li button:before {
     color: black;
