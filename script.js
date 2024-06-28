@@ -53,7 +53,7 @@ function viewProductDetails(productId) {
                 .then(description => {
                     displayProductDetails(product, description);
                     showModal();
-                    initializeCarousel(); // Inicializar el carrusel después de mostrar los detalles
+                    initializeCarousel(); 
                 })
                 .catch(error => console.error('Error fetching product description:', error));
         })
