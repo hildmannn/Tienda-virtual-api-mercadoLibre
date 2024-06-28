@@ -26,6 +26,7 @@ https://api.mercadolibre.com/sites/MLA/search?q=valorBuscado
 - Detalles del Producto:  
 https://api.mercadolibre.com/items/ID_DEL_PRODUCTO
 
-#### Autores:  
 
-Hildmann, Valentin & Salzotto,Lucas
+### Autores:  
+
+Hildmann, Valentin && Salzotto, Lucas
